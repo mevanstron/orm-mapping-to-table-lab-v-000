@@ -29,7 +29,6 @@ class Student
   end
 
   def save
-    binding.pry
     sql = <<-SQL
       INSERT INTO students (name, grade) VALUES (?, ?)
     SQL
